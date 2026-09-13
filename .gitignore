@@ -1,0 +1,23 @@
+# Personal plans, journals, runtime locks and backups
+Data/
+**/Data/
+plans.json*
+*.lock
+activate.request
+*.damaged-*
+
+# Local builds and test runs
+build/
+tests*/
+*.failure.txt
+*.tmp
+.vs/
+*.user
+*.suo
+icon-preview.png
+
+# Secrets and local configuration
+.env
+.env.*
+*.pfx
+*.key
