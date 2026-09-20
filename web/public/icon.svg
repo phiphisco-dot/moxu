@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 192 192"><defs>
+<linearGradient id="base" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#35332b"/><stop offset=".5" stop-color="#17191a"/><stop offset="1" stop-color="#101112"/></linearGradient>
+<linearGradient id="gold" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f2dfb0"/><stop offset=".45" stop-color="#d2b277"/><stop offset="1" stop-color="#9c743a"/></linearGradient>
+<linearGradient id="edge" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#d7b572" stop-opacity=".6"/><stop offset=".6" stop-color="#9b7c46" stop-opacity=".12"/><stop offset="1" stop-color="#c5a465" stop-opacity=".45"/></linearGradient>
+<symbol id="shell" viewBox="0 0 192 192"><rect x="1" y="1" width="190" height="190" rx="43" fill="url(#base)" stroke="url(#edge)" stroke-width="1.5"/></symbol>
+
+<symbol id="light" viewBox="0 0 192 192"><use href="#shell"/>
+<path d="M101 40A57 57 0 0 1 150 79L119 89A24 24 0 0 0 101 73Z" fill="#f1d89e"/>
+<path d="M152 88A57 57 0 0 1 114 150L104 119A24 24 0 0 0 120 99Z" fill="url(#gold)"/>
+<path d="M104 152A57 57 0 1 1 91 39L91 72A24 24 0 1 0 94 120Z" fill="#b18c4f"/>
+<circle cx="96" cy="96" r="10" fill="url(#gold)"/>
+</symbol>
+<symbol id="book" viewBox="0 0 192 192"><use href="#shell"/>
+<rect x="40" y="41" width="58" height="110" rx="10" fill="url(#gold)"/>
+<rect x="106" y="41" width="46" height="63" rx="10" fill="#ebd19b"/>
+<rect x="106" y="112" width="46" height="39" rx="10" fill="#9d7b44"/>
+<path d="M53 55H84" stroke="#f7e6bc" stroke-opacity=".4" stroke-width="2" stroke-linecap="round"/>
+</symbol>
+<symbol id="word" viewBox="0 0 192 192"><use href="#shell"/>
+<path d="M45 118L94 145L149 115L100 88Z" fill="#94713c" stroke="#c3a367" stroke-width="1"/>
+<path d="M45 97L94 124L149 94L100 67Z" fill="#bb975d" stroke="#d5b77e" stroke-width="1"/>
+<path d="M45 75L94 103L149 73L100 46Z" fill="url(#gold)" stroke="#f0dba8" stroke-width="1"/>
+<path d="M95 58L78 77H111M101 64L85 84M93 80L99 89" stroke="#70582f" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+</symbol>
+</defs><use href="#light"/></svg>

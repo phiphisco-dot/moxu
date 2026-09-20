@@ -1,0 +1,25 @@
+[Unit]
+Description=Zhiwei web demo
+After=network.target
+
+[Service]
+Type=simple
+User=zhiwei
+Group=zhiwei
+WorkingDirectory=/opt/zhiwei
+Environment=NODE_ENV=production
+Environment=APP_ORIGIN=https://example.com
+Environment=DATA_DIR=/var/lib/zhiwei
+Environment=PORT=18765
+ExecStart=/usr/bin/node /opt/zhiwei/server.cjs
+Restart=on-failure
+RestartSec=3
+UMask=0077
+NoNewPrivileges=true
+ProtectSystem=strict
+ProtectHome=true
+PrivateTmp=true
+ReadWritePaths=/var/lib/zhiwei
+
+[Install]
+WantedBy=multi-user.target

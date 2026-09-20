@@ -1,0 +1,1 @@
+{"name":"zhiwei-web-demo","version":"1.0.0","private":true,"description":"知微墨序单账号演示网站","engines":{"node":">=22"},"scripts":{"setup":"node setup.cjs","start":"node server.cjs","test":"node --test test.cjs"}}
